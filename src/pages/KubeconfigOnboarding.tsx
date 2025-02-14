@@ -29,6 +29,7 @@ const KubeconfigOnboarding: React.FC = () => {
       setUploadStatus(`✅ Upload successful: ${response.data.message}`);
     } catch (error) {
       setUploadStatus("❌ Upload failed. Please try again.");
+      console.error('Error fetching file information:', error);
     }
   };
 
